@@ -1,0 +1,45 @@
+.page {
+}
+.page img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #646464;
+}
+.page h3 {
+  font-size: 2em;
+  margin: 1rem 0;
+}
+.page div {
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px #888888;
+}
+.page div {
+  display: flex;
+  justify-content: space-between;
+}
+.page div span:nth-child(2) {
+  text-align: right;
+}
+.page p {
+  padding: 0.2rem 0;
+}
+.desc {
+  display: block !important;
+}
+.page button {
+  width: 100%;
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1em;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: opacity linear 0.3s;
+}
+.page button:hover {
+  opacity: 80%;
+}
