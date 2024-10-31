@@ -1,0 +1,19 @@
+.card {
+  background: var(--secondary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.lead {
+  opacity: 70%;
+  margin: 0.3rem 0;
+}
+.card span {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}

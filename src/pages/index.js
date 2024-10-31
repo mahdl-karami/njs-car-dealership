@@ -1,7 +1,10 @@
 // home imports
 import Head from "next/head";
+import cars from "@/data/carsData";
+import CarCard from "@/components/CarCard";
 
 export default function Home() {
+  const top5 = cars.slice(0, 5);
   return (
     <>
       <Head>
@@ -11,7 +14,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={``}>
-        <h1>Home</h1>
+        <div className="wrapper">
+          <div className="grid">
+            {top5.map((car, i) => (
+              <div key={i}>
+                <CarCard car={car} />
+              </div>
+            ))}
+          </div>
+        </div>
       </main>
     </>
   );
