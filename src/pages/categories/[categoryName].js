@@ -5,15 +5,12 @@ import CarCard from "@/components/CarCard";
 const Category = () => {
   const router = useRouter();
   const queries = router.query;
-
-  const x = cars.filter((car) => car.category == queries.category[0]);
-
-  console.log(x);
+  const filteredCars = cars.filter((car) => car.category == queries?.categoryName);
   return (
     <div className="wrapper">
-      <h2 className="title">{queries.category[0]}</h2>
+      <h2 className="title">{queries.categoryName}</h2>
       <div className="grid">
-        {x.map((car, i) => (
+        {filteredCars.map((car, i) => (
           <div key={i}>
             <CarCard car={car} />
           </div>
