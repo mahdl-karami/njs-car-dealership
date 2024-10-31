@@ -9,7 +9,7 @@ const { page, desc } = styles;
 const Car = () => {
   //? getting url(route) information
   const router = useRouter();
-  const carId = router.query.carId;
+  const carId = router?.query?.carId;
   //? find car by id
   const car = cars.filter((car) => car.id == carId)[0];
   const { image, name, model, year, distance, description, location, price } = car;

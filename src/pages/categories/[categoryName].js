@@ -8,12 +8,12 @@ import CarCard from "@/components/CarCard";
 const Category = () => {
   //? getting url(route) information
   const router = useRouter();
-  const queries = router.query;
+  const queries = router?.query || [];
   //? find cars by category
   const filteredCars = cars.filter((car) => car.category == queries?.categoryName);
   return (
     <div className="wrapper">
-      <h2 className="title">{queries.categoryName}</h2>
+      <h2 className="title">{queries?.categoryName}</h2>
       <div className="grid">
         {filteredCars.map((car, i) => (
           <div key={i}>

@@ -8,7 +8,7 @@ import CarCard from "@/components/CarCard";
 const Filter = () => {
   //? getting url(route) information
   const router = useRouter();
-  const queries = router.query?.values;
+  const queries = router?.query?.values || [undefined, undefined];
   const min = queries[0];
   const max = queries[1];
   //? find cars by price
