@@ -31,7 +31,7 @@ const Filtering = () => {
         <div>
           <p>Categories : </p>
           {categories.map(({ name, path }, i) => (
-            <Link href={`/categories/${path}`} key={i}>
+            <Link href={path} key={i}>
               <button>{name}</button>
             </Link>
           ))}
