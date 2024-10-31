@@ -1,6 +1,7 @@
-// home imports
+//? home imports
 import Head from "next/head";
 import cars from "@/data/carsData";
+//? import components
 import CarCard from "@/components/CarCard";
 
 export default function Home() {

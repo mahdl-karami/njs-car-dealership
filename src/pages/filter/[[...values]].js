@@ -1,12 +1,17 @@
+//? import hooks
 import { useRouter } from "next/router";
+//? import data
 import cars from "@/data/carsData";
+//? import components
 import CarCard from "@/components/CarCard";
+
 const Filter = () => {
+  //? getting url(route) information
   const router = useRouter();
   const queries = router.query?.values;
   const min = queries[0];
   const max = queries[1];
-
+  //? find cars by price
   const filteredCars = cars.filter((car) => car.price > min && car.price < max);
 
   return (

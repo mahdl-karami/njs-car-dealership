@@ -1,4 +1,6 @@
+//? import components
 import CarCard from "@/components/CarCard";
+//? import data
 import cars from "@/data/carsData";
 
 const Cars = () => {

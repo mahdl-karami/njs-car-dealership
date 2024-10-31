@@ -1,17 +1,22 @@
-import cars from "@/data/carsData";
+//? import hooks
 import { useRouter } from "next/router";
+//? import data
+import cars from "@/data/carsData";
+//? import styles
 import styles from "@/styles/carPage.module.css";
 const { page, desc } = styles;
 
 const Car = () => {
+  //? getting url(route) information
   const router = useRouter();
   const carId = router.query.carId;
+  //? find car by id
   const car = cars.filter((car) => car.id == carId)[0];
   const { image, name, model, year, distance, description, location, price } = car;
+
   return (
     <div className="wrapper">
       <div className={page}>
-        {" "}
         <img src={image} />
         <h3>{name + " " + model}</h3>
         <div>

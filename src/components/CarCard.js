@@ -1,7 +1,9 @@
 //? import styles
 import styles from "@/styles/carCard.module.css";
-import Link from "next/link";
 const { card, lead } = styles;
+//? import components
+import Link from "next/link";
+
 const CarCard = ({ car }) => {
   const { image, name, model, year, distance, location, price, id } = car;
   return (

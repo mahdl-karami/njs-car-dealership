@@ -2,12 +2,12 @@
 import styles from "@/styles/layout.module.css";
 //? import components
 import Filtering from "@/components/Filtering";
-//? import helpers
 import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
     <>
+    {/* //! header */}
       <header className={styles.header}>
         <div className="wrapper">
           <h1>
@@ -16,8 +16,10 @@ const Layout = ({ children }) => {
           <p>Choose and buy your car ...</p>
         </div>
       </header>
+      {/* //! body */}
       <Filtering />
       {children}
+      {/* //! footer */}
       <footer className={styles.footer}>
         <div className="wrapper">
           <p>
