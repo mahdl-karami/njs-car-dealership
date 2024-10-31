@@ -1,5 +1,7 @@
 //? import styles
 import styles from "@/styles/layout.module.css";
+//? import components
+import Filtering from "@/components/Filtering";
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +12,7 @@ const Layout = ({ children }) => {
           <p>Choose and buy your car ...</p>
         </div>
       </header>
+      <Filtering />
       {children}
       <footer className={styles.footer}>
         <div className="wrapper">
