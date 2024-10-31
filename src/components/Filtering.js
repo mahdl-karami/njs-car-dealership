@@ -14,6 +14,7 @@ const Filtering = () => {
         </form>
         <div>
           <p>Categories : </p>
+          <button>All</button>
           <button>Senad</button>
           <button>SUV</button>
           <button>Hackback</button>
