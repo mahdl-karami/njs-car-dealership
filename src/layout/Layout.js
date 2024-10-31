@@ -2,13 +2,17 @@
 import styles from "@/styles/layout.module.css";
 //? import components
 import Filtering from "@/components/Filtering";
+//? import helpers
+import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
     <>
       <header className={styles.header}>
         <div className="wrapper">
-          <h1>Car Dealership</h1>
+          <h1>
+            <Link href="/">Car Dealership</Link>
+          </h1>
           <p>Choose and buy your car ...</p>
         </div>
       </header>
@@ -17,7 +21,7 @@ const Layout = ({ children }) => {
       <footer className={styles.footer}>
         <div className="wrapper">
           <p>
-            Developer by{" "}
+            Developed by{" "}
             <a target="_BLANK" href="https://github.com/mahdl-karami">
               mahdl-karami
             </a>
