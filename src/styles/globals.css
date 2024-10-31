@@ -23,7 +23,7 @@ a {
   }
 }
 .wrapper {
-  width: 70%;
+  width: clamp(1px, 90%, 1200px);
   margin: auto;
 }
 .grid {
@@ -63,3 +63,25 @@ input[type="number"] {
   appearance: textfield;
 }
 /* End Remove Arrows/Spinners */
+
+/*! responsive */
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        ". ."
+        ". .";
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "."
+        ".";
+    }
+  }
+}

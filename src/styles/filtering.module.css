@@ -25,3 +25,26 @@
   margin-right: 0.2rem;
   outline: none;
 }
+
+/*! responsive */
+@media only screen and (max-width: 550px) {
+  .price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  .price input {
+    margin: 0 0 0.23rem;
+  }
+  .filtering button {
+    font-size: 0.8em;
+    padding: 0.4rem 0.8rem;
+  }
+  .price input {
+    font-size: 0.8em;
+    padding: 0.4rem 0.8rem;
+  }
+  .price button{
+    margin: 0;
+  }
+}
