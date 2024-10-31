@@ -1,0 +1,18 @@
+.header , .footer {
+  background: var(--primary);
+  padding: 2rem 0;
+}
+.header h1 {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+.header h1::after {
+  content: "";
+  width: 250px;
+  height: 2px;
+  background: var(--text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
